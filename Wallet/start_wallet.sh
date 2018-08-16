@@ -9,8 +9,8 @@
 #
 ###############################################################################
 
-NODEOSBINDIR="/home/eos-sources/eos/build/programs"
-DATADIR="/opt/EOSmainNet/Wallet"
+NODEOSBINDIR="/usr/local/src/eos-mainnet/eos/build/programs"
+DATADIR="/wallet/data/Wallet"
 WALLET_HOST="127.0.0.1"
 WALLET_POSRT="3000"
 

@@ -8,8 +8,8 @@
 #
 ###############################################################################
 
-DATADIR="/opt/EOSmainNet"
-NODEOSBINDIR="/home/eos-sources/eos/build/programs"
+DATADIR="/wallet/data"
+NODEOSBINDIR="/usr/local/src/eos-mainnet/eos/build/programs"
 
 
 $DATADIR/stop.sh
