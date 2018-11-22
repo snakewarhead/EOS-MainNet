@@ -8,7 +8,7 @@
 #
 ###############################################################################
 
-NODEOSBINDIR="/usr/local/src/eos-mainnet/eos/build/programs"
+NODEOSBINDIR="/usr/bin"
 
 NODEHOST="127.0.0.1"
 NODEPORT="7020"
@@ -17,4 +17,4 @@ WALLETHOST="127.0.0.1"
 WALLETPORT="3000"
 
 
-$NODEOSBINDIR/cleos/cleos -u http://$NODEHOST:$NODEPORT --wallet-url http://$WALLETHOST:$WALLETPORT "$@"
+$NODEOSBINDIR/cleos -u http://$NODEHOST:$NODEPORT --wallet-url http://$WALLETHOST:$WALLETPORT "$@"
