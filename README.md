@@ -1,28 +1,11 @@
 # Welcome to the EOS MainNet
 
-Based on tag: mainnet-1.1.3  
+Based on tag: mainnet-1.6.0  
 Network Monitor and Voting command prepering tool: <a href="http://eosnetworkmonitor.io/">EOSnetworkMonitor.io</a> 
 
-# Auto Installer script 
-- in progress
+! new nodeos config parametr in 1.6.0:
+`chain-threads = 8`
 
-
-<!--
-# Updating sources to new version  
-
-stop your nodeos before  
-```
-./stop.sh
-cd ../eos-source  
-rm CMakeLists.txt
-git pull
-git checkout master  
-git submodule update --init --recursive    
-
-sed -i.bak '16i set( CORE_SYMBOL_NAME "EOS" )' CMakeLists.txt   
-
-```  
--->
 
 # Manual installation
 
@@ -35,10 +18,10 @@ cd /home/eos-sources
 git clone https://github.com/EOS-Mainnet/eos.git --recursive    
 cd eos  
 
-git checkout mainnet-1.1.3 
+git checkout mainnet-1.6.0 
 git submodule update --init --recursive   
 
-./eosio_build.sh -s "EOS"     
+./eosio_build.sh -s EOS     
 ```  
 
 ## Update EOS
@@ -47,10 +30,11 @@ git submodule update --init --recursive
 mkdir /home/eos-sources  
 cd /home/eos-sources/eos  
 
-git checkout mainnet-1.1.3
+git checkout mainnet-1.6.0  
+git submodule sync  
 git submodule update --init --recursive   
 
-./eosio_build.sh -s "EOS"  
+./eosio_build.sh -s EOS  
 ```  
 
 ## Configuring Node
